@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arellano University About Page</title>
+</head>
+
+<style>
+    /* styles.css */
+
+    /* Reset default margin and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0; /* Add to reset default margin */
+    }
+
+    .wrapper {
+        min-height: 100vh; /* Ensure the wrapper takes up the full height of the viewport */
+        display: flex;
+        flex-direction: column; /* Stack the child elements vertically */
+        justify-content: space-between; /* Vertically space the header and footer */
+    }
+
+    header {
+        background-color: #005daa;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 2px solid #ccc; /* Add a gray border line at the bottom of the header */
+    }
+
+    .header-inner {
+        display: flex;
+        justify-content: center; /* Center align horizontally */
+        align-items: center;
+    }
+
+    .logo img {
+        max-width: 100px; /* Adjust the maximum width as needed */
+        height: auto;
+    }
+
+    .university-name {
+        background-color: #005daa; /* Change the background color to blue */
+        color: #fff; /* Change the text color to white */
+        padding: 0.5rem 1rem; /* Add padding to improve readability */
+        font-family: "Times New Roman", Times, serif; /* Specify Times New Roman font */
+    }
+
+    nav {
+        background-color: #f4f4f4; /* Change the background color of the navigation bar */
+        color: #333; /* Change the text color of the navigation links */
+        text-align: center;
+        padding: 0.5rem 0; /* Adjusted padding to 0.5rem top and bottom, 0 left and right */
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px; /* Add some space between the navigation links */
+    }
+
+    nav ul li:not(:last-child)::after {
+        content: "|"; /* Add the vertical bar between navigation links */
+        margin: 0 10px; /* Add spacing around the vertical bar */
+        color: #333; /* Color of the vertical bar */
+    }
+
+    nav ul li a {
+        display: inline-block;
+        color: #333; /* Change the text color of the navigation links */
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease; /* Add transition effect */
+    }
+
+    nav ul li a:hover {
+        background-color: #ddd; /* Change the background color of the navigation links on hover */
+    }
+
+    nav ul li a.active {
+        background-color: #ddd; /* Change the background color of the active navigation link */
+    }
+
+    /* Additional styles for the About Us section */
+    .about-section {
+        padding: 20px;
+        text-align: center;
+        border: 2px solid #005daa; /* Add border around the About Us section */
+        border-radius: 10px; /* Add border radius for rounded corners */
+        margin: 20px; /* Add margin to separate the section from other content */
+    }
+
+    .about-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="C:\Users\Guiller_Olario2024\Downloads\Arellano_University_New_Logo.png" alt="Arellano University Logo">
+                </div>
+                <div class="university-name">
+                    <h1>Arellano University</h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/Guiller_Olario2024/OneDrive/Visual%20Studio%20Code/index.html">Home</a></li>
+                    <li><a href="file:///C:/Users/Guiller_Olario2024/OneDrive/Visual%20Studio%20Code/News%20HTML.html">News</a></li>
+                    <li><a href="file:///C:/Users/Guiller_Olario2024/OneDrive/Visual%20Studio%20Code/Program%20HTML.html">Programs</a></li>
+                    <li><a href="file:///C:/Users/Guiller_Olario2024/OneDrive/Visual%20Studio%20Code/Contact%20us%20HTML.html">Contact Us</a></li>
+                    <li><a href="file:///C:/Users/Guiller_Olario2024/OneDrive/Visual%20Studio%20Code/About%20us%20HTML.html" class="active">About Us</a></li> <!-- Add the active class to make About Us link active -->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- About Us section -->
+        <section class="about-section">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Welcome to Arellano University!</p>
+                <p>Founded in 1938, Arellano University is one of the oldest universities in the Philippines. With a commitment to academic excellence and student success, Arellano University offers a wide range of programs across various fields of study.</p>
+                <p>Our mission is to provide quality education that prepares students for the challenges of the modern world, equipping them with the knowledge, skills, and values necessary for success in their chosen careers.</p>
+                <p>At Arellano University, we strive to create a supportive and inclusive learning environment where students can thrive academically, socially, and personally. Our dedicated faculty and staff are committed to helping students reach their full potential and achieve their goals.</p>
+                <p>Join us at Arellano University and embark on a journey of learning, discovery, and growth!</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Arellano University. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
